@@ -1,0 +1,707 @@
+/* =========================================================
+   FASHIONSTORE HOME PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   HOME PAGE BASE
+   ========================================================= */
+
+.fashion-home {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   COMMON CONTAINER
+   ========================================================= */
+
+.home-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.home-hero {
+    width: 100%;
+    background: #f0edff;
+    padding: 70px 0;
+}
+
+
+.home-hero-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+
+/* =========================================================
+   HERO TEXT
+   ========================================================= */
+
+.home-hero-content {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 600px;
+}
+
+
+.home-hero-content h1 {
+    margin: 0 0 20px 0;
+
+    font-size: 52px;
+    line-height: 1.15;
+    font-weight: 700;
+
+    color: #222;
+}
+
+
+.home-hero-content h1 span {
+    color: #6547e8;
+}
+
+
+.home-hero-content p {
+    margin: 0 0 30px 0;
+
+    max-width: 520px;
+
+    color: #666;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.home-hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.home-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 12px 24px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+
+.home-btn-primary {
+    background: #6547e8;
+    color: #fff;
+
+    border: 1px solid #6547e8;
+}
+
+
+.home-btn-primary:hover {
+    background: #5436d5;
+    border-color: #5436d5;
+}
+
+
+.home-btn-secondary {
+    background: #fff;
+    color: #6547e8;
+
+    border: 1px solid #6547e8;
+}
+
+
+.home-btn-secondary:hover {
+    background: #f7f5ff;
+}
+
+
+/* =========================================================
+   HERO IMAGE BOX
+   ========================================================= */
+
+/*
+   THIS IS THE IMPORTANT PART.
+
+   The image is NOT allowed to control the size
+   of the hero section.
+
+   The box has a fixed size similar to the
+   original emoji area.
+*/
+
+.home-hero-image {
+    flex: 0 0 420px;
+
+    width: 420px;
+    height: 360px;
+
+    min-width: 420px;
+    max-width: 420px;
+
+    background: #fff;
+
+    border-radius: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(60, 40, 120, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HERO IMAGE ITSELF
+   ========================================================= */
+
+/*
+   The actual photo stays INSIDE the 420x360 box.
+
+   It cannot become 100% of the webpage.
+*/
+
+.home-hero-image-img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    border-radius: 20px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CATEGORY SECTION
+   ========================================================= */
+
+.home-section {
+    width: 100%;
+    padding: 65px 0;
+}
+
+
+.home-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+
+.home-section-header h2 {
+    margin: 0;
+
+    font-size: 30px;
+    line-height: 1.2;
+
+    color: #222;
+}
+
+
+.home-section-header a {
+    color: #6547e8;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   CATEGORY GRID
+   ========================================================= */
+
+.home-category-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+.home-category-card {
+    display: block;
+
+    background: #fff;
+
+    border: 1px solid #e8e8ed;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.home-category-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   CATEGORY IMAGE
+   ========================================================= */
+
+.home-category-image {
+    width: 100%;
+    height: 180px;
+
+    background: #f0edff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+.home-category-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: cover;
+}
+
+
+.home-category-image span {
+    font-size: 55px;
+}
+
+
+/* =========================================================
+   CATEGORY INFORMATION
+   ========================================================= */
+
+.home-category-info {
+    padding: 18px;
+
+    text-align: center;
+}
+
+
+.home-category-info h3 {
+    margin: 0 0 5px 0;
+
+    font-size: 17px;
+
+    color: #222;
+}
+
+
+.home-category-info p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   PRODUCT GRID
+   ========================================================= */
+
+.home-product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+.home-product-card {
+    background: #fff;
+
+    border: 1px solid #e8e8ed;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.home-product-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+   ========================================================= */
+
+.home-product-image {
+    width: 100%;
+    height: 250px;
+
+    background: #f0edff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+.home-product-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: cover;
+}
+
+
+.home-product-image span {
+    font-size: 70px;
+}
+
+
+/* =========================================================
+   PRODUCT INFORMATION
+   ========================================================= */
+
+.home-product-info {
+    padding: 18px;
+}
+
+
+.home-product-brand {
+    margin: 0;
+
+    color: #6547e8;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+
+.home-product-info h3 {
+    margin: 5px 0;
+
+    font-size: 17px;
+
+    color: #222;
+}
+
+
+.home-product-gender {
+    margin: 0 0 10px 0;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+.home-product-price {
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    color: #222;
+}
+
+
+.home-product-button {
+    width: 100%;
+}
+
+
+/* =========================================================
+   OFFER BANNER
+   ========================================================= */
+
+.home-offer-banner {
+    width: 100%;
+
+    background: #6547e8;
+
+    color: #fff;
+
+    border-radius: 18px;
+
+    padding: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    box-sizing: border-box;
+}
+
+
+.home-offer-banner h2 {
+    margin: 0 0 8px 0;
+
+    font-size: 30px;
+}
+
+
+.home-offer-banner p {
+    margin: 0;
+
+    font-size: 15px;
+
+    opacity: 0.9;
+}
+
+
+.home-offer-button {
+    background: #fff;
+
+    color: #6547e8;
+
+    border: 1px solid #fff;
+
+    flex-shrink: 0;
+}
+
+
+.home-offer-button:hover {
+    background: #f7f5ff;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .home-hero-container {
+        gap: 35px;
+    }
+
+
+    .home-hero-content h1 {
+        font-size: 44px;
+    }
+
+
+    .home-hero-image {
+        flex: 0 0 360px;
+
+        width: 360px;
+        height: 310px;
+
+        min-width: 360px;
+        max-width: 360px;
+    }
+
+
+    .home-category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    .home-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .home-hero {
+        padding: 45px 0;
+    }
+
+
+    .home-hero-container {
+        width: 92%;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .home-hero-content {
+        width: 100%;
+        max-width: 600px;
+    }
+
+
+    .home-hero-content h1 {
+        font-size: 38px;
+    }
+
+
+    .home-hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .home-hero-buttons {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    /*
+       On mobile the image becomes responsive,
+       but it is still NOT allowed to become
+       the entire page.
+    */
+
+    .home-hero-image {
+        flex: 0 0 auto;
+
+        width: 100%;
+        max-width: 420px;
+
+        min-width: 0;
+
+        height: 300px;
+    }
+
+
+    .home-section {
+        padding: 45px 0;
+    }
+
+
+    .home-container {
+        width: 92%;
+    }
+
+
+    .home-section-header h2 {
+        font-size: 26px;
+    }
+
+
+    .home-category-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .home-product-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .home-offer-banner {
+        padding: 30px;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .home-hero-content h1 {
+        font-size: 32px;
+    }
+
+
+    .home-hero-image {
+        height: 270px;
+    }
+
+
+    .home-hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .home-btn {
+        width: 100%;
+    }
+
+}
